@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <title>Random Dog Image Generator By Breed Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Random Dog Image Generator By Breed Search</h1>
+        <div class="search-container">
+            <form>
+                <label for="dogBreed">Breed Type:
+                    <input type="text" class="breed-input" name="dogBreed" placeholder="Enter a breed">
+                </label>
+            </form>
+            <form action="">
+                <label for="imgNum"># of Images: <br>(between 1 - 50)
+                    <input type="number" min="1" step="1" class="image-number" placeholder="Enter a number">
+                </label>
+            </form>
+            <button type="submit" class="generate-button">Generate</button>
+        </div>
+        <div class="image-container">
+            <img class="default-image" src="./src/dog-face-android8.0.png" alt="Dog Icon">
+        </div>
+        <div class="error-container"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
